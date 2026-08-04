@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
  */
 
 @RestController
-public class HelloWolrdController {
+public class HelloWorldController {
 
     //metodo get retornando um texto no endpoint padrão
     @GetMapping("/")
