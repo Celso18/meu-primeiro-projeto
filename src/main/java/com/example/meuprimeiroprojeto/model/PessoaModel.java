@@ -1,20 +1,16 @@
 package com.example.meuprimeiroprojeto.model;
 
-//ela vai ser um modelo de criação pra objetos
-//do tipo PESSOA
-public class PessoaModel {
+public class Pessoa {
     private String nome;
     private int idade;
-    private String cidadeNascimento;
+    private String localNascimento;
 
-    //metodo construtor vazio
-    //Vai ser utilizado na requisição POST, PUT e DELETE
-    public PessoaModel(){};
+    public Pessoa(){};
 
-    public PessoaModel(String nome, int idade, String cidadeNascimento) {
+    public Pessoa(String nome, int idade, String localNascimento){
         this.nome = nome;
         this.idade = idade;
-        this.cidadeNascimento = cidadeNascimento;
+        this.localNascimento = localNascimento;
     }
 
     public String getNome() {
@@ -33,11 +29,11 @@ public class PessoaModel {
         this.idade = idade;
     }
 
-    public String getCidadeNascimento() {
-        return cidadeNascimento;
+    public String getLocalNascimento() {
+        return localNascimento;
     }
 
-    public void setCidadeNascimento(String cidadeNascimento) {
-        this.cidadeNascimento = cidadeNascimento;
+    public void setLocalNascimento(String localNascimento) {
+        this.localNascimento = localNascimento;
     }
-}
+}}
