@@ -1,21 +1,22 @@
 package com.example.meuprimeiroprojeto.model;
 
+//ela vai ser um modelo de criação pra objetos
+//do tipo PESSOA
 public class PessoaModel {
-
     private String nome;
     private int idade;
-    private String cidade;
+    private String cidadeNascimento;
 
-    public PessoaModel(){}
+    //metodo construtor vazio
+    //Vai ser utilizado na requisição POST, PUT e DELETE
+    public PessoaModel(){};
 
-    // Construtor necessário para o HelloWorldController funcionar
-    public PessoaModel(String nome, int idade, String cidade) {
+    public PessoaModel(String nome, int idade, String cidadeNascimento) {
         this.nome = nome;
         this.idade = idade;
-        this.cidade = cidade;
+        this.cidadeNascimento = cidadeNascimento;
     }
 
-    // Getters e Setters para o Spring Boot conseguir ler os dados
     public String getNome() {
         return nome;
     }
@@ -32,11 +33,11 @@ public class PessoaModel {
         this.idade = idade;
     }
 
-    public String getCidade() {
-        return cidade;
+    public String getCidadeNascimento() {
+        return cidadeNascimento;
     }
 
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
+    public void setCidadeNascimento(String cidadeNascimento) {
+        this.cidadeNascimento = cidadeNascimento;
     }
 }
